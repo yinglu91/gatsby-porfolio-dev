@@ -39,7 +39,7 @@ export const Sites = () => {
       <h2>Sites</h2>
       <div>
         {websites.nodes.map(({id, title, url, childScreenshot}) => (
-              <article key={id} className={styles.tour}>
+              <article key={id} className={styles.site}>
               <a href={url} target="_blank" rel="noopener noreferrer">
                 <div className={styles.hvrFloatShadow}>
                   <Img

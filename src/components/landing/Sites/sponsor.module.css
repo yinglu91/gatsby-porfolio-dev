@@ -1,18 +1,19 @@
-.tour {
-  box-shadow: var(--lightShadow);
-  transition: var(--mainTransition);
+.site {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
 }
-/* .tour:hover {
-  box-shadow: var(--darkShadow);
-} */
+
+.site:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
 
 .img-container {
   position: relative;
   background: lightblue;
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
 }
 .img {
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
 }
 .img-container:hover .img {
   opacity: 0.5;
@@ -86,7 +87,7 @@
   border: 2px solid var(--mainWhite);
   padding: 0.5rem 0.7rem;
   display: inline-block;
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
   cursor: pointer;
 }
 .link:hover {
