@@ -72,5 +72,21 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+
+    `gatsby-transformer-screenshot`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
   ],
 };
+
+// https://github.com/smakosh/gatsby-portfolio-dev
+// This removes the .cache/ & public/ folders
+// yarn reset
+// yarn add <pkg>
+// Run yarn && yarn start
+// yarn v1.17.3
