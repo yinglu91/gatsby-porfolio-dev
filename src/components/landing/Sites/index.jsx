@@ -58,3 +58,27 @@ export const Sites = () => {
     </Wrapper>
   );
 };
+
+/*
+{
+  "data": {
+    "allSitesYaml": {
+      "nodes": [
+        {
+          "id": "527635ad-5f58-5ba9-b9db-453f52a63c1f",
+          "url": "https://selenasiri.com/",
+          "title": "Selena Siri",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "fixed": {
+                  "src": "/static/a0ff8819b0dc3e18778416bc7b9305ae/4f17c/2e31a0e2bd0f633e2e7f06aeb211c66c.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+*/
