@@ -3,8 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
 import { Wrapper, Grid, Item, Content, Stats, HvrFloatShadow } from './styles';
-import styles from './sponsor.module.css'
-
+import styles from './site.module.css'
 import Img from 'gatsby-image'
 
 const getData = graphql`
@@ -28,15 +27,14 @@ const getData = graphql`
   }
 `
 export const Sites = () => {
-  console.log(HvrFloatShadow)
   const { theme } = useContext(ThemeContext);
-
   const { websites } = useStaticQuery(getData)
 
   return (
     <Wrapper as={Container} id="sites">
       <h2>Sites</h2>
-<Grid>
+
+      <Grid>
         {websites.nodes.map(({id, title, url, childScreenshot}) => (
           <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme}>
@@ -46,7 +44,6 @@ export const Sites = () => {
                     childScreenshot.screenshotFile.childImageSharp.fixed
                   }
                   alt={title}
-                  className={styles.img}
                 />
               </Content>
               <TitleWrap>
