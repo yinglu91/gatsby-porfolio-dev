@@ -46,7 +46,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "reset": "rm -rf .cache/ public/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "serve": "gatsby serve -H 0.0.0.0 -p 8000"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
