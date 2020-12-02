@@ -14,10 +14,6 @@ const getData = graphql`
             name
             url
             description
-            stargazers {
-              totalCount
-            }
-            forkCount
             languages(first: 3) {
               nodes {
                 id
